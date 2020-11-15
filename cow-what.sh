@@ -5,11 +5,8 @@
 # clear the screen
 clear
 
-# TODO: Use command "figlet" to make title
-# example:
-# figlet "* Cow-what *" 
-
-
+figlet "* Cow-what *" 
+sleep 5
 
 # see who is playing and respond
 echo "Hello, who am I talking to?"
