@@ -65,12 +65,13 @@ def get_name():
 
     return name 
 
-def print_large_title(text):
+def print_formated_text(text, font):
     'Print very large banner'
-    cprint(figlet_format(text, font='starwars'),
+    cprint(figlet_format(text, font=font),
         'yellow', 'on_red', attrs=['bold'])
     
-
+def clear_screen():
+    os.system('clear')
 
 if __name__ == "__main__":
 
@@ -79,7 +80,10 @@ if __name__ == "__main__":
     OPT = cmd_args()
     #USERNAME = OPT.username
 
-    print_large_title('Math Cow')
+    os.system('clear')
+
+    print_formated_text('Math Cow', 'slant')
 
     NAME = get_name()
 
+    print('Hi {}'.format(NAME))
