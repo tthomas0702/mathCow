@@ -49,29 +49,22 @@ def cmd_args():
 
 ### END ARGPARSE SECTION ###
 
-
-def run_ssh_copy(device_ip_list):
-    'run ssh-copy on the host provided in list'
-    for host in device_ip_list:
-        command = 'ssh-copy-id -o ConnectTimeout=1 root@{} 2>/dev/null'.format(host)
-        os.system(command)
-
-# make function to give Welcome screen
-
-
 def get_name():
     'Get players name'
     name = input('What is your name? ')
 
     return name 
 
+
 def print_formated_text(text, font):
     'Print very large banner'
     cprint(figlet_format(text, font=font),
         'yellow', 'on_red', attrs=['bold'])
+
     
 def clear_screen():
     os.system('clear')
+
 
 if __name__ == "__main__":
 
