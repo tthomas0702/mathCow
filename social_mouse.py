@@ -3,7 +3,7 @@
 
 '''
 This is a mouse that like to talk
-version 0.0.1
+version 0.0.2
 '''
 
 
