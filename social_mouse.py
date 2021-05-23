@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 
-
 '''
 This is a mouse that like to talk
 version 0.0.2
 '''
-
 
 import os
 import sys
@@ -25,9 +23,6 @@ away. As you get closer' you see that it is a friendly looking mouse
 that is dressed nicely but not fancy. When the mouse gets within a few
 feet it stops and with a smile it looks you in the eye and says...\n\n'''
 print(intro)
-
-
-
 
 
 # topic #1 #:
